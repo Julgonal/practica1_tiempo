@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+body { 
+  background-color: #384347;
+
+}
+.content{
+position: absolute;
+left: 40%;
+right: 40%;
+top: 25%;
+text-align: center;
+width: auto;
+color: white;
+border: 1px solid #aa06b3;; 
+/* background-color: red; */
+}
+
+h1 {color: aqua; }
