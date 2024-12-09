@@ -1,6 +1,12 @@
-<div class="galeria">
-  <h1 class="">Galería</h1>
-  <app-card *ngFor="let tarjeta of tarjetas" [tarjeta]="tarjeta"></app-card>
+<div *ngFor="let tarjeta of tarjetas">
+  <div class="card">
+    <img [src]="tarjeta.foto" alt="{{ tarjeta.titulo }}">
+    <div class="card-body">
+      <h5>{{ tarjeta.titulo }}</h5>
+      <p>{{ tarjeta.descripcion }}</p>
+      <div *ngIf="tarjeta.weather !== null">
+        <p>Temperatura: {{ tarjeta.weather }}°C</p>
+      </div>
+    </div>
+  </div>
 </div>
-
-

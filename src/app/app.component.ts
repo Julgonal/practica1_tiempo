@@ -6,6 +6,7 @@ import { FormsModule } from '@angular/forms';
 import { GaleriaComponent } from './componentes/galeria/galeria.component';
 import { CommonModule } from '@angular/common';
 
+
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -14,15 +15,16 @@ import { CommonModule } from '@angular/common';
   styleUrl: './app.component.css',
 
 })
-export class AppComponent {
+export class AppComponent  {
   title = 'practica1';
   constructor(private router: Router) {}
+
    user: string = '';
    pass: string = '';
    usuario = "admin";
    password = "admin"; 
    isLogeado = false;
- 
+
   Validar(){
     if( this.usuario === this.user  && this.password === this.pass){
       this.isLogeado = true;
